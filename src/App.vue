@@ -36,6 +36,10 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
+    <router-link to="/">HOME</router-link>
+    <router-link to="/project">Project</router-link>
+    <router-link to="/detail/0"> ID 0</router-link>
+    $router.push({name: 'detail', params: {id: '0'});
     <router-view v-bind:posts="posts" />
   </div>
 </template>
